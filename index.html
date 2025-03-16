@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            justify-items: center;
+            align-items: center;
+            
+        }
+        .box1{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px 40px;
+            border-radius: 10px;
+            background-color: rgb(98, 181, 249);
+        }
+        .button{
+            border-radius: 25px;
+            padding: 8px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px gray;
+            background-color: aliceblue;
+        }
+        .button:hover{
+            background-color: pink;
+            transition: 0.2s;
+            transform: scale(1.2);
+        }
+        /* #button1{
+            border: 3px solid Green;
+            /* background-color: lightgreen */
+        } */
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .frame1{
+            display: flex;
+            margin-top: 30px;
+        }
+        .frame2{
+            display: flex;
+        }
+        .pic-default{
+            width: 700px;
+            height: 500px;
+            margin: 15px;
+            box-shadow: 0 4px 8px gray;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h3 class="button" id="button1">BUTTON 1</h3>
+        <h3 class="button" id="button2">BUTTON 2</h3>
+        <h3 class="button" id="button3">BUTTON 3</h3>
+        <h3 class="button" id="button4">BUTTON 4</h3>
+        <h3 class="button" id="button5">BUTTON 5</h3>
+    </div>
+    <div class="box2">
+        <div class="frame1">
+            <img src="./img/cat1.jpg" alt="Ảnh Layout" class="pic-default" id="pic1"></img>
+            <img src="./img/cat6.jpg" alt="Ảnh Layout" class="pic-default" id="pic2"></img>
+        </div>
+        <div class="frame2">
+            <img src="./img/cat7.jpg" alt="Ảnh Layout" class="pic-default" id="pic3"></img>
+            <img src="./img/cat8.jpg" alt="Ảnh Layout" class="pic-default" id="pic4"></img>
+        </div>
+    </div>
+</body>
+</html>
